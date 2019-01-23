@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.css">
+    <title>calories calculator</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary text-center">
+        <div class="container">
+            <a class="navbar-brand" href="#">Calories Calculator</a>
+        </div>
+    </nav>
+
+    <div class="container p-3">
+        <div class="card border-primary mb-3">
+            <div class="card-body">
+                <h3 class="card-title">Add meal / Food item</h3>
+                <form>
+                    <div class="container row">
+                        <div class="form-group col-lg-6">
+                            <label for="meal">Meal</label>
+                            <input type="text" class="form-control" id="meal" placeholder="Add Item">
+                        </div>
+                        <div class="form-group col-lg-6">
+                            <label for="calories">calories</label>
+                            <input type="number" class="form-control" id="calories" placeholder="Add calories">
+                        </div>
+
+                        <div class="container">
+                            <button type="submit" class="add-btn btn btn-outline-primary p-1 m-1"><i class="fa fa-plus"
+                                    aria-hidden="true"></i> Add meal</button>
+
+                            <button type="submit" class="update-btn btn btn-outline-success p-1 m-1"><i class="fa fa-pencil-square-o"
+                                    aria-hidden="true"></i> Update</button>
+                            <button type="submit" class="delete-btn btn btn-outline-danger p-1 m-1"><i class="fa fa-times"
+                                    aria-hidden="true"></i> Delete</button>
+
+                            <button type="submit" class="back-btn btn btn-outline-secondary float-right p-1 m-1"><i
+                                    class="fa fa-arrow-circle-left" aria-hidden="true"></i> Back</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="container table-container">
+            <!--Calorie count-->
+            <h3 class="text-center">Total calories : <span class="total-calories">0</span></h3>
+            <button class="clearAll-btn btn btn-outline-primary p-1 m-1 pull-right" type="submit">Clear all</button>
+            <!--List items-->
+            <table class="table table-hover display-items">
+                <td><strong></strong><em></em><a class="edit-btn" href="#"></a></td>
+            </table>
+        </div>
+
+
+    </div>
+
+    <!--Bootstrap js-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+
+
+    <!--our js-->
+    <script src="data.js"></script>
+    <script src="ids.js"></script>
+    <script src="ui.js"></script>
+    <script src="localStorage.js"></script>
+    <script src="code.js"></script>
+    <script src="eventListners.js"></script>
+    <script src="commonData.js"></script>
+
+</body>
+
+</html>
